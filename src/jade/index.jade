@@ -1,0 +1,313 @@
+doctype html
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+
+html(lang="ru")
+head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    title Document
+    meta(name="description" content="")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="bower/normalize.css/normalize.css")
+    link(rel="stylesheet", href="css/app.css")
+    link(rel="stylesheet", href="fonts/elektra/stylesheet.css")
+    script(src="bower/modernizr/modernizr.js")
+body
+    <!--[if lt IE 7]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    div.wrapper
+        div.header-container
+            header.header
+                div.header__logo
+                    a.header__logo-link(href="#")
+                        img.header__logo-image(src="img/logo.png", alt="AppleShop")
+                div.header__contact
+                    div.header__contact-phone
+                        a(href="tel:+79213221232").header__contact-phone-link
+                            span.header__contact-small +7 (921)
+                            |  322 12 32
+                    div.header__contact-email
+                        a(href="mailto:manager@company.com").header__contact-link manager@company.com
+        ///header-container
+        div.container
+            nav.topnav
+                ul.topnav__list
+                    li.topnav__item
+                        a.topnav__item-link(href="#")
+                            span.topnav__item-text Мобильные телефоны
+                    li.topnav__item
+                        a.topnav__item-link.active(href="#")
+                            span.topnav__item-text Планшеты
+                    li.topnav__item
+                        a.topnav__item-link(href="#")
+                            span.topnav__item-text Mp3 плееры
+                    li.topnav__item
+                        a.topnav__item-link(href="#")
+                            span.topnav__item-text Персональные компьютеры
+                    li.topnav__item
+                        a.topnav__item-link(href="#")
+                            span.topnav__item-text Ноутбуки
+                    li.topnav__item
+                        a.topnav__item-link(href="#")
+                            span.topnav__item-text Apple TV
+                    li.topnav__item
+                        a.topnav__item-link(href="#")
+                            span.topnav__item-text Аксессуары
+            div.subnav.row
+                div.breadcrumbs
+                    ul.breadcrumbs__list
+                        li.breadcrumbs__item
+                            a.breadcrumbs__item-link(href="#") Главная
+                        li.breadcrumbs__item
+                            a.breadcrumbs__item-link.active(href="#") Каталог
+                div.display-pages-wrap
+                    div.display
+                        div.display__select
+                            span.display__select-text
+                            div.display-wrap
+                                div.display__option.active(data-style="1") Списком
+                                div.display__option(data-style="0") Сеткой
+                    div.pages
+                        ul.pages__list
+                            li.pages__item
+                                a.pages__item-link(href="#").active 1
+                            li.pages__item
+                                a.pages__item-link(href="#") 2
+                            li.pages__item
+                                a.pages__item-link(href="#") 3
+                            li.pages__item
+                                a.pages__item-link(href="#") 4
+                            li.pages__item
+                                a.pages__item-link(href="#") 5
+                            li.pages__item
+                                a.pages__item-link(href="#") Все
+            div.row
+                aside.catalogue
+                    ul.catalogue__list
+                        li.catalogue__category
+                            span.catalogue__category-text iPhone
+                            ul.catalogue__subcategory
+                                li.catalogue__item
+                                    div.catalogue__item-wrap
+                                        a.catalogue__item-link(href="") iPhone 4s
+                                li.catalogue__item
+                                    div.catalogue__item-wrap
+                                        a.catalogue__item-link(href="") iPhone 5
+                                li.catalogue__item
+                                    div.catalogue__item-wrap
+                                        a.catalogue__item-link(href="") iPhone 5s с эксклюзивным дизайном
+                                li.catalogue__item
+                                    div.catalogue__item-wrap
+                                        a.catalogue__item-link(href="") iPhone 6
+                                li.catalogue__item
+                                    div.catalogue__item-wrap
+                                        a.catalogue__item-link(href="") iPhone 6 plus
+                        li.catalogue__category
+                            span.catalogue__category-text iPad
+                            ul.catalogue__subcategory
+                                li.catalogue__item
+                                    div.catalogue__item-wrap
+                                        a.catalogue__item-link(href="") iPhone 4s
+                                li.catalogue__item
+                                    div.catalogue__item-wrap
+                                        a.catalogue__item-link(href="") iPhone 5
+                                li.catalogue__item
+                                    div.catalogue__item-wrap
+                                        a.catalogue__item-link(href="") iPhone 5s с эксклюзивным дизайном
+                                li.catalogue__item
+                                    div.catalogue__item-wrap
+                                        a.catalogue__item-link(href="") iPhone 6
+                                li.catalogue__item
+                                    div.catalogue__item-wrap
+                                        a.catalogue__item-link(href="") iPhone 6 plus
+                        li.catalogue__category
+                            span.catalogue__category-text iMac
+                        li.catalogue__category
+                            span.catalogue__category-text Macbook
+                        li.catalogue__category
+                            span.catalogue__category-text iPod
+                        li.catalogue__category
+                            span.catalogue__category-text Другое
+                section.products
+                    div.products__list
+                        a.products__item-link(href="#")
+                            div.products__item
+                                div.products__item-image
+                                    img(src="http://lorempixel.com/130/100/technics/1/")
+                                div.products__description
+                                    div.products__description-header
+                                        div.products__description-link Apple Thunderbolt Display 27"
+                                    div.products__description-title Артикул
+                                    div.products__description-text 42787825
+                                    div.products__description-title Опция
+                                    div.products__description-text включена
+                                    div.products__description-title Цвет
+                                    div.products__description-text серебристый
+                                    div.products__description-title Размер
+                                    div.products__description-text 1280*1245*90
+                                    div.products__description-title Вес
+                                    div.products__description-text 9 кг
+                        a.products__item-link(href="#")
+                            div.products__item
+                                    div.products__item-image
+                                        img(src="http://lorempixel.com/130/100/technics/2/")
+                                    div.products__description
+                                        div.products__description-header
+                                            div.products__description-link Apple Thunderbolt Display 27"
+                                        div.products__description-title Артикул
+                                        div.products__description-text 42787825
+                                        div.products__description-title Опция
+                                        div.products__description-text включена
+                                        div.products__description-title Цвет
+                                        div.products__description-text серебристый
+                                        div.products__description-title Размер
+                                        div.products__description-text 1280*1245*90
+                                        div.products__description-title Вес
+                                        div.products__description-text 9 кг
+                        a.products__item-link(href="#")
+                            div.products__item
+                                    div.products__item-image
+                                        img(src="http://lorempixel.com/130/100/technics/3/")
+                                    div.products__description
+                                        div.products__description-header
+                                            div.products__description-link Apple Thunderbolt Display 27"
+                                        div.products__description-title Артикул
+                                        div.products__description-text 42787825
+                                        div.products__description-title Опция
+                                        div.products__description-text включена
+                                        div.products__description-title Цвет
+                                        div.products__description-text серебристый
+                                        div.products__description-title Размер
+                                        div.products__description-text 1280*1245*90
+                                        div.products__description-title Вес
+                                        div.products__description-text 9 кг
+                        a.products__item-link(href="#")
+                            div.products__item
+                                    div.products__item-image
+                                        img(src="http://lorempixel.com/130/100/technics/4/")
+                                    div.products__description
+                                        div.products__description-header
+                                            div.products__description-link Apple Thunderbolt Display 27"
+                                        div.products__description-title Артикул
+                                        div.products__description-text 42787825
+                                        div.products__description-title Опция
+                                        div.products__description-text включена
+                                        div.products__description-title Цвет
+                                        div.products__description-text серебристый
+                                        div.products__description-title Размер
+                                        div.products__description-text 1280*1245*90
+                                        div.products__description-title Вес
+                                        div.products__description-text 9 кг
+                        a.products__item-link(href="#")
+                            div.products__item
+                                    div.products__item-image
+                                        img(src="http://lorempixel.com/130/100/technics/5/")
+                                    div.products__description
+                                        div.products__description-header
+                                            div.products__description-link Apple Thunderbolt Display 27"
+                                        div.products__description-title Артикул
+                                        div.products__description-text 42787825
+                                        div.products__description-title Опция
+                                        div.products__description-text включена
+                                        div.products__description-title Цвет
+                                        div.products__description-text серебристый
+                                        div.products__description-title Размер
+                                        div.products__description-text 1280*1245*90
+                                        div.products__description-title Вес
+                                        div.products__description-text 9 кг
+                        a.products__item-link(href="#")
+                            div.products__item
+                                    div.products__item-image
+                                        img(src="http://lorempixel.com/130/100/technics/6/")
+                                    div.products__description
+                                        div.products__description-header
+                                            div.products__description-link Apple Thunderbolt Display 27"
+                                        div.products__description-title Артикул
+                                        div.products__description-text 42787825
+                                        div.products__description-title Опция
+                                        div.products__description-text включена
+                                        div.products__description-title Цвет
+                                        div.products__description-text серебристый
+                                        div.products__description-title Размер
+                                        div.products__description-text 1280*1245*90
+                                        div.products__description-title Вес
+                                        div.products__description-text 9 кг
+                    section.about
+                        div.about__header Пара слов о магазине
+                        div.about__content
+                            p
+                                |  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur repellendus soluta similique temporibus! Odit architecto vero totam debitis voluptates labore rem mollitia alias dignissimos fugit? Atque autem debitis, at consequuntur.
+                            p
+                                |  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat itaque modi eaque culpa, autem dolore aspernatur quod. In dignissimos molestiae ex, eveniet velit magnam debitis aliquid, atque mollitia voluptate facilis.
+                    //- about
+        //- container
+        footer.footer
+            div.footer-container
+                div.footer__logo
+                    img.footer__logo-image(src="img/footer-logo.png", alt="AppleShop")
+                div.footer__menu
+                    ul.footer__list
+                        div.footer__list-title О магазине
+                        li.footer__item
+                            a.footer__item-link(href="") О нас
+                        li.footer__item
+                            a.footer__item-link(href="") Наши цены
+                        li.footer__item
+                            a.footer__item-link(href="") Наши скидки
+                        li.footer__item
+                            a.footer__item-link(href="") Акции
+                div.footer__menu
+                    ul.footer__list
+                        div.footer__list-title Каталог
+                        li.footer__item
+                            a.footer__item-link(href="") Смартфоны
+                        li.footer__item
+                            a.footer__item-link(href="") Планшеты
+                        li.footer__item
+                            a.footer__item-link(href="") Компьютеры
+                        li.footer__item
+                            a.footer__item-link(href="") Аксессуары
+                div.footer__menu
+                    ul.footer__list
+                        div.footer__list-title Контакты
+                        li.footer__item
+                            a.footer__item-link(href="") Телефоны
+                        li.footer__item
+                            a.footer__item-link(href="") Адреса
+                        li.footer__item
+                            a.footer__item-link(href="") Карта проезда
+                        li.footer__item
+                            a.footer__item-link(href="") Обратная связь
+                div.footer__social
+                    div.footer__apps
+                        a.footer__apps-link-as(href="")
+                        a.footer__apps-link-gp(href="")
+                    div.footer__social-links
+                        ul.footer__social-list
+                            li.footer__social-item
+                                a.footer__social-link.footer__social-vk(href="#")
+                                    span.footer__social-text Vkontakte
+                            li.footer__social-item
+                                a.footer__social-link.footer__social-fb(href="#")
+                                    span.footer__social-text Facebook
+                            li.footer__social-item
+                                a.footer__social-link.footer__social-tw(href="#")
+                                    span.footer__social-text Twitter
+    //- wrapper
+
+
+
+
+
+
+
+    script(src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
+    script(type='text/javascript').
+        window.jQuery || document.write('<script src="bower/jquery/dist/jquery.min.js"><\/script>')
+    script(src='bower/scrollup/dist/jquery.scrollUp.min.js')
+    script(src="js/app.js")
